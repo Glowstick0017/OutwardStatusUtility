@@ -1,0 +1,10 @@
+{
+  "namespace": "Glowstick",
+  "name": "OutwardAllStatus",
+  "description": "Apply any combination of 400+ status effects with customizable categories - from boons and buffs to hexes and debuffs!",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "BepInEx-BepInExPack_Outward-5.4.19"
+  ],
+  "website_url": "https://github.com/Glowstick0017/outward_allstatus"
+}

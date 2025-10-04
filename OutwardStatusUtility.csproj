@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>OutwardAllStatus</AssemblyName>
+    <AssemblyName>OutwardStatusUtility</AssemblyName>
     <Description>Apply multiple status effects to player with a keypress</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

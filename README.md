@@ -1,16 +1,19 @@
-# Outward All Status
+# Outward Status Utility
 
 A BepInEx mod for Outward that allows you to apply multiple status effects to your character with a single keypress.
 
 ## Features
 
-- **Apply ALL Status Effects**: Press F9 to apply 100+ status effects from the game (enabled by default)
-- **Comprehensive Effect Database**: Includes Boons, Buffs, Imbuements, Hexes, and more from the Outward Wiki
-- **Flexible Configuration**: Choose to apply all effects or select specific categories
-- **Safe by Default**: Harmful effects (Bleeding, Burning, Poison, etc.) are excluded unless explicitly enabled
-- **Smart Name Matching**: Tries multiple naming variations to find status effects
-- **Custom Status IDs**: Add your own status effect IDs
-- **Default Durations**: Effects use their built-in durations from the game
+- **🎯 16 Granular Categories** - Enable exactly the effects you want
+- **📊 400+ Status Effects** - Complete database organized by identifier names
+- **⚡ Instant Application** - Press F9 (configurable) to apply all enabled effects
+- **🧹 Instant Removal** - Press NumPad 7 (configurable) to remove all status effects
+- **🎮 10 Positive Effect Categories** - Boons, buffs, recovery, imbuements, and more
+- **⚠️ 6 Negative Effect Categories** - Hexes, debuffs, DOTs, diseases (disabled by default)
+- **🔧 Custom Effect Lists** - Add specific effect names for precise control or modded content
+- **📝 Fully Configurable** - All settings via BepInEx config file or [Outward Config Manager](https://thunderstore.io/c/outward/p/Mefino/Outward_Config_Manager/)
+- **✅ Name-Based Matching** - Effects are matched by their exact identifier names for reliability
+- **Safe by Default** - Harmful effects disabled by default
 
 ## Installation
 
@@ -20,98 +23,141 @@ A BepInEx mod for Outward that allows you to apply multiple status effects to yo
 
 ### Manual Installation
 1. Download the latest release
-2. Extract `OutwardAllStatus.dll` into `BepInEx/plugins/` folder in your Outward directory
+2. Extract `OutwardStatusUtility.dll` into `BepInEx/plugins/` folder in your Outward directory
 3. Run the game
 
 ## Configuration
 
 Press **F5** in-game (if you have [Outward Config Manager](https://thunderstore.io/c/outward/p/Mefino/Outward_Config_Manager/) installed) or manually edit the config file at:
-`BepInEx/config/com.robbiepc.outwardallstatus.cfg`
 
-### Configuration Options
+`BepInEx/config/com.Glowstick.outwardstatusutility.cfg`
 
-**General**
+### Configuration Categories
+
+#### General Settings
 - **Apply Status Key**: The key to press to apply effects (Default: F9)
-- **Apply All Effects**: When enabled, applies ALL known status effects (Default: true)
-  - Overrides individual category settings when enabled
+- **Remove Status Key**: The key to press to remove all effects (Default: NumPad 7)
 
-**Effects** (Only apply when "Apply All Effects" is disabled)
-- **Enable Blessing Effects**: Apply boons like Blessed, Cool, Warm, etc. (Default: true)
-- **Enable Buff Effects**: Apply combat buffs and resistances (Default: true)
-- **Enable Imbuements**: Apply weapon/shield imbuements (Default: true)
-- **Enable Hex Effects**: Apply hex debuffs like Chill, Confusion, Curse (Default: false)
-  - ⚠️ May reduce your damage and resistances!
-- **Enable Debuff Effects**: Apply debuffs like Crippled, Dizzy, Slow Down (Default: false)
-  - ⚠️ May reduce movement speed and resistances!
-- **Include Negative Effects**: Include DoT effects like Bleeding, Burning, Poisoned (Default: false)
-  - ⚠️⚠️ DANGEROUS! Will damage you over time!
+#### 🟢 Positive Effect Categories (Enabled by Default)
+- **Enable Boons** - Major magical blessings (Rage, Discipline, Bless, Cool, Warm, Mist, Possessed)
+- **Enable Recovery Effects** - Health/Stamina/Mana regeneration
+- **Enable Combat Buffs** - Attack Up, Protection, Speed Up, Resistance
+- **Enable Special Buffs** - Exalted, Energized, Prime, Elemental Buffs
+- **Enable Food Buffs** - Positive food/drink effects
+- **Enable Misc Effects** - Gift of Blood, Corruption Recovery, etc.
 
-**Note**: Effect durations are controlled by the game's built-in status effect definitions and cannot be easily modified through this mod.
+#### 🔵 Positive Effects (Disabled by Default)
+- **Enable Imbuements** - Weapon/shield elemental imbues (may interfere with your imbues)
+- **Enable Rune Effects** - Magical rune blessings (some are quest/story related)
+- **Enable Rest Effects** - Tent and inn rest bonuses (can cause sleep/drowsy)
+- **Enable Environmental Effects** - Temperature/weather resistances
 
-**Advanced**
-- **Custom Status IDs**: Comma-separated list of custom status effect IDs to apply
-  - Example: `MyCustomStatus1,MyCustomStatus2,AnotherEffect`
+#### 🔴 Negative Effect Categories (All Disabled by Default)
+⚠️ **WARNING:** These effects can harm, debuff, or kill your character!
+
+- **Enable Hexes** ⚠️ - Confusion, Pain, Chill, Haunted, Doom, Curse
+- **Enable Debuffs** ⚠️ - Slow Down, Dizzy, Weaken, Sapped, Cripple
+- **Enable DOTs** ⚠️ - Bleeding, Burning, Poisoned, Immolate, Plague
+- **Enable Extreme Negatives** ⚠️⚠️ - DANGEROUS! Petrified, Corruption, Freezing
+- **Enable Food Debuffs** ⚠️ - Starving, Hungry, Parched, Drunk
+- **Enable Diseases** ⚠️ - Infection, Indigestion, Fever, Withdrawal
+
+#### 🛠️ Custom Effects
+- **Enable Custom Effects** - Toggle for custom effect list
+- **Custom Status Names** - Comma-separated list of effect identifier names (e.g., `Rage,Discipline,Cool,Fire Imbue`)
+
+## How It Works
+
+The mod uses **identifier name matching** to apply status effects precisely:
+
+1. You enable categories (e.g., Boons, Combat Buffs) or add custom effect names
+2. When you press F9, the mod collects all effect names from enabled categories
+3. It searches through all game status effects and matches by `IdentifierName`
+4. Only effects with matching names are applied to your character
+5. Press NumPad 7 to instantly remove all active status effects
+
+This approach ensures:
+- ✅ **Accurate Category Filtering** - Only effects from enabled categories are applied
+- ✅ **Modded Effect Support** - Works with custom effects by their identifier name
+- ✅ **Reliable Matching** - Uses the game's internal naming system
+- ✅ **Full Control** - See exactly which effects are applied via debug logs
 
 ## Status Effects Database
 
-The mod includes **100+ status effects** from the Outward Wiki, organized into categories:
+The mod includes **400+ status effects** organized into 16 categories by their identifier names.
 
-### ✅ Positive Effects (Safe - Applied by Default)
+📊 **[View Complete Status Effect List](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/edit?gid=1969601658#gid=1969601658)**
 
-**Boons (7 effects)**
-- Blessed, Cool, Warm, Discipline, Mist, Possessed, Rage
+### ✅ Positive Effects (Enabled by Default)
 
-**Buffs (30+ effects)**
-- Combat: Barrier, Craze, Elemental Immunity, Impact Up, Kill Streak, Speed Up, etc.
-- Vital: Health Recovery, Mana Recovery, Stamina Recovery
-- Resistances: Elemental Resistance, Impact Resistance Up, Status Buildup Resistance
-- Special: Corruption Resistance, Force Bubble, Prime, Alert
+- **Boons** - Rage, Discipline, Bless, Cool, Warm, Mist, Possessed (and amplified versions)
+- **Recovery Effects** - Health/Stamina/Mana recovery (multiple tiers)
+- **Combat Buffs** - Attack Up, Protection, Speed Up, Impact/Damage Resistance, Fortify
+- **Special Buffs** - Exalted, Energized, Prime, Elemental Buffs, Focus
+- **Food Buffs** - Full, Refreshed, Gaberry Wine, Well Rested
+- **Misc Effects** - Gift of Blood, Corruption Recovery, various resistances
 
-**Imbuements (24+ effects)**
-- Basic: Fire Imbue, Frost Imbue, Lightning Imbue, Poison Imbue, Wind Imbue
-- Greater: Greater Fire/Frost/Lightning/Decay/Ethereal/Poison Imbues
-- Special: Divine Light, Mystic Fire/Frost, Blood/Frost/Shatter Bullet Imbues
-- Shield: Fire/Frost/Lightning/Decay/Ethereal Shield Imbues
+### 🔵 Positive Effects (Disabled by Default)
 
-**Weather Protection**
-- Cold Weather Defense, Hot Weather Defense, Weather Defense, Wet
+- **Imbuements** - Fire, Frost, Lightning, Poison, Ethereal, Decay (24+ imbues)
+- **Rune Effects** - Shim, Egoth, Dez, Fal, Runic Lantern
+- **Rest Effects** - Tent and inn rest bonuses
+- **Environmental Effects** - Temperature and weather resistances
 
-### ⚠️ Negative Effects (Disabled by Default - Enable Carefully!)
+### ⚠️ Negative Effects (All Disabled by Default)
 
-**Hexes (7 effects)**
-- Chill, Confusion, Curse, Doomed, Haunted, Pain, Scorched
-- Effect: Reduces damage and resistances by 25%
+**⚠️ WARNING:** These effects can harm, debuff, or kill your character!
 
-**Debuffs (12+ effects)**
-- Movement: Crippled (-50% speed), Slow Down (-25% speed), Hampered
-- Combat: Dizzy (-60% Impact Resist), Weaken (-40% damage), Sapped
-- Special: Breathless, Despirited, Drawback, Panic
-
-**DoT Effects - DANGEROUS! (10+ effects)**
-- Bleeding, Extreme Bleeding, Burning, Poisoned, Extreme Poison
-- Blaze, Holy Blaze, Plague
-- **⚠️ These will damage you over time - NOT recommended!**
+- **Hexes** - Confusion, Pain, Chill, Haunted, Doom, Curse (reduces damage and resistances)
+- **Debuffs** - Slow Down, Dizzy, Weaken, Sapped, Cripple (movement and combat penalties)
+- **DOTs** - Bleeding, Burning, Poisoned, Immolate, Plague (damage over time)
+- **Extreme Negatives** - Petrified, Corruption, Freezing, Rupture (VERY DANGEROUS!)
+- **Food Debuffs** - Starving, Hungry, Parched, Drunk
+- **Diseases** - Infection, Indigestion, Fever, Withdrawal
 
 ## Usage
 
-1. Load into the game with your character
-2. Press **F9** (or your configured key)
-3. Status effects will be applied to your character
-4. Check the console log (BepInEx console) to see which effects were applied
+1. **Load into the game** with your character
+2. **Press F9** (or your configured key) to apply status effects from enabled categories
+3. **Press NumPad 7** (or your configured key) to remove all status effects
+4. All effects from **enabled categories** will be applied instantly
+5. Check the console log (BepInEx console) or in-game notification to see results
 
-## Finding Status Effect IDs
+### Usage Examples
 
-To add custom status effects, you'll need to find their internal IDs:
+**🧪 Testing Build Synergies**
+- Enable: Boons, Combat Buffs, Special Buffs
+- Test your build with all positive effects active
 
-1. Enable Debug Mode in Outward
-2. Use tools like dnSpy or Unity Explorer to inspect game objects
-3. Look in the game's ResourcesPrefabManager for status effect prefabs
-4. Add the identifier names to the Custom Status IDs configuration
+**🔥 Challenge Mode**  
+- Enable: Hexes, Debuffs, DOTs
+- Create a hardcore challenge with multiple negative effects
 
-Common status effect patterns:
-- Buffs often match their in-game names
-- Some effects have specific prefixes or suffixes
-- Check the Outward modding wiki for known effect IDs
+**🎨 Specific Effect Combo**
+- Disable all categories
+- Enable Custom Effects: `Rage,Discipline,Cool,Fire Imbue`
+- Apply only the exact effects you want
+
+**🧹 Quick Reset**
+- Press NumPad 7 to instantly clear all status effects
+- Perfect for testing or removing unwanted effects
+
+## Finding Status Effect Names
+
+To add custom status effects, use their exact identifier names:
+
+📊 **[View Complete Status Effect List](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/edit?gid=1969601658#gid=1969601658)**
+
+**Example Custom Names:**
+```
+Rage,Discipline,Bless,Fire Imbue,Greater Fire Imbue,Frost Imbue
+```
+
+**Important Notes:**
+- Names are **case-sensitive** - must match exactly
+- Use commas to separate multiple effect names
+- No quotes needed around names
+- Works with modded effects if you know their identifier names
 
 ## Building from Source
 
@@ -129,7 +175,12 @@ dotnet nuget add source https://nuget.bepinex.dev/v3/index.json -n BepInEx
 dotnet build -c Release
 ```
 
-Output will be located at: `bin/Release/net472/OutwardAllStatus.dll`
+Output will be located at: `bin/Release/net472/OutwardStatusUtility.dll`
+
+## Project Structure
+```
+
+Output will be located at: `bin/Release/net472/OutwardStatusUtility.dll`
 
 ## Troubleshooting
 

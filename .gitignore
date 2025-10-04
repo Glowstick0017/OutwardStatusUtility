@@ -30,7 +30,7 @@ Managed/
 *.dll
 
 # Except our mod output
-!OutwardAllStatus.dll
+!OutwardStatusUtility.dll
 
 # Config files
 *.cfg

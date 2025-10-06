@@ -384,15 +384,7 @@ The mod includes 260+ status effects organized into categories by their identifi
 
 ## 📝 Changelog
 
-### v1.0.0 - Initial Release
-
-- 16 configurable status effect categories (260+ effects total)
-- Name-based identifier matching for precise effect application
-- Custom effect name support for modded content
-- Configurable hotkeys (F9 apply, Numpad7 remove)
-- Full BepInEx Config Manager support
-- Detailed debug logging
-- Safe defaults (negative effects disabled)
+See [CHANGELOG.md](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/CHANGELOG.md) for detailed version history.
 
 ## 🔗 Links
 

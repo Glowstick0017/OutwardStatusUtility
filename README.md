@@ -237,15 +237,7 @@ MIT License - See LICENSE file for details
 
 ## Changelog
 
-### Version 1.0.0
-- Initial release
-- 16 configurable status effect categories (260+ effects total)
-- Name-based identifier matching for precise effect application
-- Custom effect name support for modded content
-- Configurable hotkeys (F9 apply, Numpad7 remove)
-- Full BepInEx Config Manager support
-- Detailed debug logging
-- Safe defaults (negative effects disabled)
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ## Links
 

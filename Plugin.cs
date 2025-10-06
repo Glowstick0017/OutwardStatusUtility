@@ -13,7 +13,7 @@ namespace OutwardStatusUtility
     {
         public const string GUID = "com.Glowstick.outwardstatusutility";
         public const string NAME = "Outward Status Utility";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.1.0";
 
         internal static ManualLogSource Log;
         

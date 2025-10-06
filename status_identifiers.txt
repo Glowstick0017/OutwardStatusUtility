@@ -1,0 +1,252 @@
+Caldera Basic Sleep
+Aetherbomb
+AetherbombExplosion
+Alert
+Ambraine Withdrawal
+AmbraineWithdrawalPreEffects
+AncientDwellerSlowing
+Armor Penalties Reduction
+Attack Up
+Bag Over Encumbered
+Bandage
+Barrier 1
+Barrier 2
+Berg Inns
+Blaze
+Bleeding
+Bleeding +
+Bless
+Bless Amplified
+Bloated
+Blood Leech
+Blood Leech Victim
+Breathless
+Burn
+Burning
+Caldera Hall Sleep
+Caldera Inn Sleep
+Calygrey Sleep
+Camo Tent buff
+Charged Boon
+Chill
+Cierzo Inns
+Cold1
+Cold2
+ColdExposure
+Confusion
+Cool
+Cool Amplified
+Corrupt Negative
+Corrupt Positive
+Corruption Recovery 1
+Corruption Recovery 2
+Corruption Resistance 1
+Corruption Resistance 2
+CorruptionBurst
+Craze
+CrimsonMineLvl
+CrimsonSunLvl
+Cripple
+Curse
+Decay Totem Sleep
+Defense Bonus
+Defiled Negative
+Defiled Positive
+DEPRECATED_Energized
+Dez Runes
+Discipline
+Discipline Amplified
+Dispirited
+Dizzy
+Doom
+Drawback
+Drowsy
+Drunk
+Egoth Runes
+ElemChromaticBuff
+ElemDecayBuff
+Elemental Immunity
+Elemental Resistance
+Elemental Resistance 2
+Elemental Vulnerability
+ElemEtherealBuff
+ElemFireBuff
+ElemFrostBuff
+ElemLightBuff
+EliteSupremeShellDiscipline
+EliteSupremeShellRage
+Energized
+Environment Cold Resistance
+Environment Heat Resistance
+Environment Resistance
+Ethereal Totem Sleep
+Exalted
+ExtremeManaRegen1
+Fal Runes
+Fire Totem Sleep
+Fireflies
+Flu1
+Flu2
+Flu3
+Food Attack Up
+Food Bless
+Food Cool
+Food Discipline
+Food Dizzy
+Food Environment Cold Resistance
+Food Environment Heat Resistance
+Food Impact Up
+Food Mist
+Food Poisoned
+Food Poisoned +
+Food Possessed
+Food Slow Down
+Food Speed Up
+Food Stability Up
+Food Warm
+Food Water Stamina
+Force Bubble
+Freezing
+Full
+Fur Tent buff
+Gaberry Wine
+GargoyleBoonLvl
+GhostRhythm
+Gift of Blood
+Gift of Blood Ally
+Glaucoma1
+Glaucoma2
+Glaucoma3
+GrandmotherBoon
+Hallowed Marsh Poison Lvl1
+Hallowed Marsh Poison Lvl2
+Hampered
+Harmattant Inn A
+Harmattant Inn B
+Haunted
+HealingWater
+Health Recovery 2
+Health Recovery 3
+Health Recovery 4
+Health Recovery 5
+Health Recovery Small
+HeatExposure
+HiveInfestation1
+hiveInfestation2
+HolyBlaze
+Hunch1
+Hunch2
+Hungry
+Ice Totem Sleep
+Immolate
+Impact Up
+Indigestion1
+Indigestion2
+Infection1
+Infection2
+Infection3
+KillStreak
+Levant Inns
+Leywilt1
+Leywilt2
+Life Drain 1
+Life Drain 2
+Life Drain 3
+Light Totem Sleep
+LionmanElderBoonLvl1
+LionmanElderBoonLvl2
+Lockwell's Revelation Tired
+Lockwell's Revelation Very Tired
+Luxurious Tent buff
+Mage Tent buff
+Mana Cost Reduction
+Mana Ratio Recovery 2
+Mana Ratio Recovery 3
+Mana Ratio Recovery 4
+Mana Ratio Recovery 5
+Mana Ratio Recovery Small
+MeekaFever1
+MeekaFever2
+Mist
+Mist Amplified
+Monsoon Inns
+Otitis1
+Otitis2
+Pain
+Panic
+Paranoia1
+Paranoia2
+Paranoia3
+Parched
+Passive Mana Regen
+Petrification
+Petrified
+Plague
+Plant Tent Buff
+Poison Immunity
+Poisoned
+Poisoned +
+Possessed
+Possessed Amplified
+Pouch Over Encumbered
+Prime
+Protection 1
+Protection 2
+PureWater
+Putrid Hex
+Rage
+Rage Amplified
+Refreshed
+Runic Blade
+Runic Heal Amplified
+Runic Lantern
+Runic Lantern Amplified
+Runic Protection
+Runic Protection Amplified
+Sapped
+SaunaInn
+ScarletEmissaryProt
+Scourge Tent Buff
+Shim Runes
+Shimmer
+Shock Hex
+SkyRhythm
+Slow Down
+SlughellProt
+Speed Up
+Stability Up
+Stability Up 2
+Stamina Cost Reduction
+Stamina Recovery 2
+Stamina Recovery 3
+Stamina Recovery 4
+Stamina Recovery 5
+Stamina Recovery Small
+Starving
+StatusBuildUpResDown
+StatusBuildUpResUp
+Stealth Up
+Stun
+SulphurPoison
+SupremeShellRage
+Swarm Boon
+Tainted
+Temperature Burning
+TempleBuff
+TempleBuffPlus
+Tent buff
+Test Basic
+Test Stack
+Thirsty
+Tired
+Titanic Golem 1
+Titanic Golem 2
+Titanic Golem 3
+Unerring Read
+Warm
+Warm Amplified
+Weaken
+Wet
+Wind Imbue Stats
+Wolf Fal Runes
+Wolf Runic Protection

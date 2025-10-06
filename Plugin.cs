@@ -132,35 +132,19 @@ namespace OutwardStatusUtility
             "Craze",
             "GhostRhythm",
             "SkyRhythm",
+            "Charged Boon",
+            "Swarm Boon",
+            "Putrid Hex",
+            "Shock Hex",
+            "CorruptionBurst",
         };
         
-        // Imbue Effects
+        // Imbue Effects - Note: Imbue effects are not directly accessible as status effects
+        // They are applied through items/skills, not status effect identifiers
         private static readonly List<string> ImbueEffectNames = new List<string>
         {
-            "Poison Imbue",
-            "Greater Poison Imbue",
-            "Fire Imbue",
-            "Greater Fire Imbue",
-            "Frost Imbue",
-            "Greater Frost Imbue",
-            "Lightning Imbue",
-            "Greater Lightning Imbue",
-            "Greater Ethereal Imbue",
-            "Wind Imbue",
-            "Greater Decay Imbue",
-            "Decay Shield Imbue",
-            "Ethereal Shield Imbue",
-            "Fire Shield Imbue",
-            "Frost Shield Imbue",
-            "Lightning Shield Imbue",
-            "Mystic Fire Imbue",
-            "Mystic Frost Imbue",
-            "Divine Light Imbue",
-            "Infuse Blood",
-            "Infuse Mana",
-            "Frost Bullet Imbue",
-            "Blood Bullet Imbue",
-            "Shatter Bullet Imbue",
+            // Imbuements don't appear in status effect list
+            // Keeping this list empty - players can add custom imbue effects if needed
         };
         
         // Runes & Special Items
@@ -244,6 +228,7 @@ namespace OutwardStatusUtility
             "HeatExposure",
             "Temperature Burning",
             "AncientDwellerSlowing",
+            "CorruptionBurst",
         };
         
         // Food & Drink Effects
@@ -345,6 +330,17 @@ namespace OutwardStatusUtility
             "hiveInfestation2",
             "MeekaFever1",
             "MeekaFever2",
+            "Flu1",
+            "Flu2",
+            "Flu3",
+            "Glaucoma1",
+            "Glaucoma2",
+            "Glaucoma3",
+            "Otitis1",
+            "Otitis2",
+            "Paranoia1",
+            "Paranoia2",
+            "Paranoia3",
         };
         
         // Special & Misc Effects
@@ -379,6 +375,10 @@ namespace OutwardStatusUtility
             "Pouch Over Encumbered",
             "Force Bubble",
             "Wind Imbue Stats",
+            "Poison Immunity",
+            "Life Drain 1",
+            "Life Drain 2",
+            "Life Drain 3",
         };
 
         void Awake()
@@ -496,7 +496,7 @@ namespace OutwardStatusUtility
             Log.LogInfo($"{NAME} {VERSION} loaded successfully!");
             Log.LogInfo($"Press {ApplyStatusKey.Value} to apply status effects");
             Log.LogInfo($"Press {RemoveStatusKey.Value} to remove all status effects");
-            Log.LogInfo($"Total effects available: 400+");
+            Log.LogInfo($"Total effects available: 260+");
         }
 
         void Update()

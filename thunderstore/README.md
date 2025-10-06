@@ -1,10 +1,26 @@
 # Outward Status Utility
 
-Apply any combination of status effects to your character with the press of a button! This mod gives you complete control over 400+ status effects in Outward, organized into 16 intuitive categories.
+Apply any combination of status effects to your character with the press of a button! This mod gives you complete control over 260+ status effects in Outward, organized into 16 intuitive categories.
 
-Perfect for testing builds, creating challenges, or just having fun with game mechanics!
+Perfect for testing builds, creating challenges, or just having fun with game mechanics!## 📋## 📋 ## 📋 Full Effect List
 
----
+The mod includes **260+ status effects** organized into categories by their identifier names.
+
+📋 **Included File:** `status_identifiers.txt` - Complete alphabetical list of all effect names
+
+📊 **[View Complete Effect List](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)**fect List
+
+The mod includes **260+ status effects** organized into categories by their identifier names.
+
+📋 **Included File:** `status_identifiers.txt` - Complete alphabetical list of all effect names
+
+📊 **[View Complete Effect List](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)**ffect List
+
+The mod includes **260+ status effects** organized into categories by their identifier names.
+
+📋 **Included File:** `status_identifiers.txt` - Complete alphabetical list of all effect names
+
+📊 **[View Complete Effect List](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)**
 
 ## ✨ Features
 
@@ -78,7 +94,7 @@ The mod uses **identifier name matching** for precise effect application:
 
 | Category | Count | Description | Why Disabled? |
 |----------|-------|-------------|---------------|
-| **Enable Imbuements** | 24 | Weapon/shield elemental imbues | Fire/Frost/Lightning/Poison/Decay/Ethereal Imbues (Shield + Greater versions) - May interfere with your actual imbues |
+| **Enable Imbuements** | 0 | Weapon/shield elemental imbues | Imbues are applied via items/skills, not status effects |
 | **Enable Rune Effects** | 13 | Magical rune blessings | Shim/Egoth/Dez/Fal Runes, Runic Lantern/Blade/Protection/Heal - Some are quest/story related |
 | **Enable Rest Effects** | 27 | Tent and inn rest bonuses | Tent buffs (Camo/Fur/Luxurious/Mage/Plant/Scourge), Inn Sleep effects (Cierzo/Berg/Levant/Monsoon) - Can cause unwanted sleep/drowsy |
 | **Enable Environmental Effects** | 10 | Temperature/weather resistances | Environment Cold/Heat Resistance, Cold1-2, Wet, Hallowed Marsh Poison, Sulphur Poison - May conflict with survival mechanics |
@@ -92,9 +108,9 @@ The mod uses **identifier name matching** for precise effect application:
 | **Enable Hexes** ⚠️ | 6 | Magical curses (damage reduction) | Confusion, Pain, Chill, Haunted, Doom, Curse |
 | **Enable Debuffs** ⚠️ | 13 | Combat penalties | Slow Down, Dizzy, Stun, Weaken, Sapped, Cripple, Panic, Breathless, Hampered |
 | **Enable DOTs** ⚠️ | 10 | Damage over time | Burn, Burning, Poisoned/Poisoned+, Bleeding/Bleeding+, Immolate, Blaze, Plague |
-| **Enable Extreme Negatives** ⚠️⚠️ | 14 | VERY DANGEROUS! | Petrification, Petrified, Tainted, Corrupt/Defiled (Positive/Negative), Freezing, Aetherbomb |
+| **Enable Extreme Negatives** ⚠️⚠️ | 15 | VERY DANGEROUS! | Petrification, Petrified, Tainted, Corrupt/Defiled (Positive/Negative), Freezing, Aetherbomb |
 | **Enable Food Debuffs** ⚠️ | 10 | Hunger/thirst penalties | Starving, Hungry, Bloated, Parched, Thirsty, Drunk, Food Dizzy/Poisoned/Slow Down |
-| **Enable Diseases** ⚠️ | 15 | Disease effects | Infection 1-3, Indigestion 1-2, Ambraine Withdrawal, Leywilt, Hunch, Hive Infestation, Meeka Fever |
+| **Enable Diseases** ⚠️ | 27 | Disease effects | Infection 1-3, Indigestion 1-2, Ambraine Withdrawal, Leywilt, Hunch, Hive Infestation, Meeka Fever, Flu, Glaucoma, Otitis, Paranoia |
 
 ### 🛠️ Custom Effects
 
@@ -105,10 +121,12 @@ The mod uses **identifier name matching** for precise effect application:
 
 **Example Custom List:**
 ```
-Rage,Discipline,Cool,Fire Imbue,Greater Fire Imbue,Speed Up
+Rage,Discipline,Cool,Speed Up,Attack Up,Protection 1
 ```
 
-📋 **[View Complete Status Effect List (400+ Effects)](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/edit?gid=1969601658#gid=1969601658)**
+📋 **[View Complete List (260+ Effects)](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)**
+
+📄 **Included File:** `status_identifiers.txt` contains all available effect names
 
 ---
 
@@ -180,7 +198,7 @@ Rage,Discipline,Cool,Fire Imbue,Greater Fire Imbue,Speed Up
 | StatusBuildUpResUp | Increased status buildup resistance |
 | Shimmer | Special defensive buff |
 
-### ✅ Special Buffs (15 Effects)
+### ✅ Special Buffs (20 Effects)
 
 | Effect Name | Description |
 |-------------|-------------|
@@ -199,35 +217,17 @@ Rage,Discipline,Cool,Fire Imbue,Greater Fire Imbue,Speed Up
 | Craze | Berserker-like enhancement |
 | GhostRhythm | Spirit-based buff |
 | SkyRhythm | Heaven-based buff |
+| Charged Boon | Electric charge enhancement |
+| Swarm Boon | Swarm blessing |
+| Putrid Hex | Decay-based enhancement |
+| Shock Hex | Lightning-based enhancement |
+| CorruptionBurst | Corruption power burst |
 
-### 🔵 Imbuements (24 Effects)
+### 🔵 Imbuements
 
-| Effect Name | Type |
-|-------------|------|
-| Poison Imbue | Weapon imbue |
-| Greater Poison Imbue | Enhanced weapon imbue |
-| Fire Imbue | Weapon imbue |
-| Greater Fire Imbue | Enhanced weapon imbue |
-| Frost Imbue | Weapon imbue |
-| Greater Frost Imbue | Enhanced weapon imbue |
-| Lightning Imbue | Weapon imbue |
-| Greater Lightning Imbue | Enhanced weapon imbue |
-| Greater Ethereal Imbue | Enhanced weapon imbue |
-| Wind Imbue | Weapon imbue |
-| Greater Decay Imbue | Enhanced weapon imbue |
-| Decay Shield Imbue | Shield imbue |
-| Ethereal Shield Imbue | Shield imbue |
-| Fire Shield Imbue | Shield imbue |
-| Frost Shield Imbue | Shield imbue |
-| Lightning Shield Imbue | Shield imbue |
-| Mystic Fire Imbue | Special weapon imbue |
-| Mystic Frost Imbue | Special weapon imbue |
-| Divine Light Imbue | Special weapon imbue |
-| Infuse Blood | Blood weapon infusion |
-| Infuse Mana | Mana weapon infusion |
-| Frost Bullet Imbue | Ranged imbue |
-| Blood Bullet Imbue | Ranged imbue |
-| Shatter Bullet Imbue | Ranged imbue |
+**Note:** Weapon and shield imbues are applied through items and skills, not as status effects. The Imbuements category is included but empty by default. You can add custom imbue-related status effects using the Custom Effects feature if needed.
+
+To imbue weapons in-game, use imbue items, spells, or skills as normal.
 
 ### ⚠️ Hexes (6 Effects)
 
@@ -285,7 +285,7 @@ Rage,Discipline,Bless,Fire Imbue,Speed Up,Attack Up
 Enable all 10 positive categories for the ultimate power fantasy!
 
 ```
-Result: ~173 positive effects applied
+Result: ~167 positive effects applied
 Note: May cause visual clutter with many buff icons
 ```
 
@@ -335,29 +335,31 @@ Custom Status Names =
 
 ## 📋 Full Effect List
 
-The mod includes **400+ status effects** organized into categories by their identifier names.
+The mod includes **260+ status effects** organized into categories by their identifier names.
 
-📊 **[View Complete Status Effect List](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/edit?gid=1969601658#gid=1969601658)**
+� **Included File:** `status_identifiers.txt` - Complete alphabetical list of all effect names
+
+📊 **[View Online Database](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)**
 
 **Effect Counts by Category:**
 - ✅ Boons: 14 effects
 - ✅ Recovery: 17 effects
 - ✅ Combat Buffs: 20 effects
-- ✅ Special Buffs: 15 effects
-- 🔵 Imbuements: 24 effects
+- ✅ Special Buffs: 20 effects
+- 🔵 Imbuements: 0 effects (imbues applied via items/skills)
 - 🔵 Rune Effects: 13 effects
 - ✅ Food Buffs: 14 effects
 - 🔵 Rest Effects: 27 effects
 - 🔵 Environmental: 10 effects
-- ✅ Misc Effects: 29 effects
+- ✅ Misc Effects: 32 effects
 - ⚠️ Hexes: 6 effects
 - ⚠️ Debuffs: 13 effects
 - ⚠️ DOTs: 10 effects
-- ⚠️ Extreme Negatives: 14 effects
+- ⚠️ Extreme Negatives: 15 effects
 - ⚠️ Food Debuffs: 10 effects
-- ⚠️ Diseases: 15 effects
+- ⚠️ Diseases: 27 effects
 
-**Total: 400+ Status Effects**
+**Total: 260+ Status Effects**
 
 ---
 
@@ -404,7 +406,8 @@ The mod includes **400+ status effects** organized into categories by their iden
 
 **Custom effect not working:**
 - Verify the identifier name is correct and case-sensitive
-- Check the [complete effect list](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/)
+- Check `status_identifiers.txt` included with the mod for exact names
+- Check the [complete effect list on GitHub](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)
 - Enable "Custom Effects" toggle in config
 - For modded effects, check the mod's documentation for exact names
 
@@ -418,13 +421,14 @@ The mod includes **400+ status effects** organized into categories by their iden
 ## 📝 Changelog
 
 ### v1.0.0 - Initial Release
-- 16 configurable status effect categories (400+ effects total)
+- 16 configurable status effect categories (260+ effects total)
 - Name-based identifier matching for precise effect application
 - Custom effect name support for modded content
 - Configurable hotkeys (F9 apply, NumPad 7 remove)
 - Full BepInEx Config Manager support
 - Detailed debug logging
 - Safe defaults (negative effects disabled)
+- Includes `status_identifiers.txt` with complete effect list
 
 ---
 
@@ -432,7 +436,7 @@ The mod includes **400+ status effects** organized into categories by their iden
 
 - **Source Code:** [GitHub Repository](https://github.com/Glowstick0017/OutwardStatusUtility)
 - **Issues/Suggestions:** [GitHub Issues](https://github.com/Glowstick0017/OutwardStatusUtility/issues)
-- **Effect List:** [Google Sheets Database](https://docs.google.com/spreadsheets/d/1btxPTmgeRqjhqC5dwpPXWd49-_tX_OVLN1Uvwv525K4/)
+- **Effect List:** [status_identifiers.txt](https://github.com/Glowstick0017/OutwardStatusUtility/blob/main/status_identifiers.txt)
 
 ---
 
@@ -447,3 +451,4 @@ MIT License - Free to use, modify, and distribute
 Found a bug? Have a suggestion? Open an issue on [GitHub](https://github.com/Glowstick0017/OutwardStatusUtility/issues)!
 
 Enjoy experimenting with status effects! 🎮✨
+
